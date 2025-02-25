@@ -1,0 +1,30 @@
+.gallery__detail {
+  @media (min-width: 1024px) {
+    padding: 0 calc(300 / 1440* 100vw);
+  }
+}
+
+.gallery__detail ul {
+  margin-bottom: 0;
+  gap: 0;
+}
+
+.gallery__detail ul li {
+  width: 100%;
+  max-width: none;
+  display: block;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    width: calc(50% - 10px);
+  }
+
+  @media (min-width: 1024px) {
+    width: calc(50% - 20px);  
+    margin-bottom: 40px;
+  }
+}
+
+.gallery__detail ul li img {
+  height: 100%;
+}
